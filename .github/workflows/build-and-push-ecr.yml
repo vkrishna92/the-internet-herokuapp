@@ -1,17 +1,17 @@
-name: Build and push to ECR
-description: 'Builds a Docker image and pushes it to ECR'
+name: Build and Push Docker image to ECR
+
 on:
   push:
-    branches: ['master']
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
-  id-token: write
-  contents: read
+  id-token: write    # required for OIDC auth
+  contents: read     # to checkout the repo
 
 env:
-  AWS_REGION: us-west-2
-  ECR_REPOSITORY: selenium-tests
+  AWS_REGION: us-west-2             # change as per your AWS region
+  ECR_REPOSITORY: selenium-tests    # your ECR repo name
   IMAGE_TAG: latest
 
 jobs:
@@ -20,18 +20,18 @@ jobs:
 
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: setup jdk 17
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: 17
+          java-version: '17'
           distribution: 'temurin'
 
-      - name: Build project with maven
-        uses: mvn clean package -DskipTests
+      - name: Build project with Maven
+        run: mvn clean package -DskipTests
 
-      - name: Configure AWS Credentials
+      - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::140023384358:role/GitHubActionsECRPushRole
@@ -44,7 +44,7 @@ jobs:
       - name: Build, tag, and push Docker image to ECR
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          run: |
-            docker build -t $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }} .
-            docker push $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
-            echo "Image pushed: $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}"
+        run: |
+          docker build -t $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }} .
+          docker push $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}
+          echo "✅ Image pushed: $ECR_REGISTRY/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_TAG }}"
