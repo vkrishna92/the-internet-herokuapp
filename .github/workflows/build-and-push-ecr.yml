@@ -11,7 +11,7 @@ permissions:
 
 env:
   AWS_REGION: us-west-2             # change as per your AWS region
-  ECR_REPOSITORY: selenium-tests    # your ECR repo name
+  ECR_REPOSITORY: heroku-tests    # your ECR repo name
   IMAGE_TAG: latest
 
 jobs:
