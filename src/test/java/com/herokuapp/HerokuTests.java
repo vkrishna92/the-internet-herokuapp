@@ -1,6 +1,7 @@
 package com.herokuapp;
 
 import com.herokuapp.pageobjects.AddRemoveElementsPage;
+import com.herokuapp.pageobjects.DropdownPage;
 import com.herokuapp.pageobjects.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -10,9 +11,10 @@ public class HerokuTests extends BaseTest{
 
     HomePage homePage;
     AddRemoveElementsPage addRemoveElementsPage;
+    DropdownPage dropdownPage;
 
     @Test
-    public void addRemoveButton(){
+    public void addRemoveButtonTest(){
         homePage = new HomePage(driver);
         homePage.clickOnMenuItem("Add/Remove Elements");
         addRemoveElementsPage = new AddRemoveElementsPage(driver);
@@ -23,7 +25,12 @@ public class HerokuTests extends BaseTest{
     }
 
     @Test
-    public void test2(){
-        System.out.println("Test 2 successfull.");
+    public void dropdownTest(){
+        homePage = new HomePage(driver);
+        homePage.clickOnMenuItem("Dropdown");
+        dropdownPage = new DropdownPage(driver);
+        dropdownPage.verifyPage();
+        dropdownPage.selectOption("Option 2");
+        Assert.assertEquals(dropdownPage.getSelectedOption(), "Option 2", "Option 2 should be selected.");
     }
 }
