@@ -19,4 +19,5 @@ public class HomePage extends BasePage{
         log.info("Clicking on menu item: " + menuItem);
         driver.findElement(By.partialLinkText(menuItem)).click();
     }
+
 }

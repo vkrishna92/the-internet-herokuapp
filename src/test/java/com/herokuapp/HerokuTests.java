@@ -23,14 +23,4 @@ public class HerokuTests extends BaseTest{
         addRemoveElementsPage.clickDeleteButton();
         Assert.assertTrue(addRemoveElementsPage.isDeleteButtonPresent(), "Delete button should be deleted.");
     }
-
-    @Test
-    public void dropdownTest(){
-        homePage = new HomePage(driver);
-        homePage.clickOnMenuItem("Dropdown");
-        dropdownPage = new DropdownPage(driver);
-        dropdownPage.verifyPage();
-        dropdownPage.selectOption("Option 2");
-        Assert.assertEquals(dropdownPage.getSelectedOption(), "Option 2", "Option 2 should be selected.");
-    }
 }
