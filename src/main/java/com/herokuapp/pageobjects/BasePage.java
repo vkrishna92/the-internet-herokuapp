@@ -21,6 +21,10 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
+    protected void waitForPageToLoad() {
+
+    }
+
     protected void waitForTextToBePresent(By locator, String text) {
         wait.until(ExpectedConditions.textToBe(locator, text));
     }

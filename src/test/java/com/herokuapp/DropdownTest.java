@@ -1,5 +1,6 @@
 package com.herokuapp;
 
+import com.herokuapp.helpers.VisualReasonEngine;
 import com.herokuapp.pageobjects.AddRemoveElementsPage;
 import com.herokuapp.pageobjects.DropdownPage;
 import com.herokuapp.pageobjects.HomePage;
@@ -19,6 +20,8 @@ public class DropdownTest extends BaseTest{
         dropdownPage = new DropdownPage(driver);
         dropdownPage.verifyPage();
         dropdownPage.selectOption("Option 2");
-        Assert.assertEquals(dropdownPage.getSelectedOption(), "Option 2", "Option 2 should be selected.");
+        String prompt = "Option 2 is selected on dropdown. There is only one Dropdown List.";
+        Assert.assertTrue(VisualReasonEngine.getInstance().validateUiImage(driver, prompt));
+        //Assert.assertEquals(dropdownPage.getSelectedOption(), "Option 2", "Option 2 should be selected.");
     }
 }

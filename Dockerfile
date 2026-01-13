@@ -4,4 +4,4 @@ WORKDIR /app
 # Install Maven (no old chromedriver included)
 RUN apt-get update && apt-get install -y maven
 COPY . .
-CMD ["mvn", "test", "-DsuiteXmlFile=src/test/resources/testng.xml"]
+CMD ["mvn", "test"]

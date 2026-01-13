@@ -1,5 +1,6 @@
 package com.herokuapp;
 
+import com.herokuapp.helpers.VisualReasonEngine;
 import com.herokuapp.pageobjects.AddRemoveElementsPage;
 import com.herokuapp.pageobjects.DropdownPage;
 import com.herokuapp.pageobjects.HomePage;
@@ -16,11 +17,15 @@ public class HerokuTests extends BaseTest{
     @Test
     public void addRemoveButtonTest(){
         homePage = new HomePage(driver);
+        String prompt = "";
         homePage.clickOnMenuItem("Add/Remove Elements");
         addRemoveElementsPage = new AddRemoveElementsPage(driver);
         addRemoveElementsPage.verifyPage();
         addRemoveElementsPage.clickAddElementButton();
+        prompt = "Delete button is displayed and Add Element is displayed.";
+        Assert.assertTrue(VisualReasonEngine.getInstance().validateUiImage(driver,prompt));
         addRemoveElementsPage.clickDeleteButton();
-        Assert.assertTrue(addRemoveElementsPage.isDeleteButtonPresent(), "Delete button should be deleted.");
+        prompt = "Delete button is not displayed and Add Element is displayed";
+        Assert.assertTrue(VisualReasonEngine.getInstance().validateUiImage(driver, prompt));
     }
 }
