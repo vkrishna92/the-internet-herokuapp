@@ -5,7 +5,8 @@ import com.herokuapp.helpers.VisualReasonEngine;
 import com.herokuapp.models.AiResult;
 import com.herokuapp.pageobjects.HomePage;
 import com.herokuapp.pageobjects.LoginPage;
-import com.herokuapp.tests.BaseTest;
+import com.herokuapp.utils.LoggerHelper;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -14,6 +15,7 @@ public class LoginPageTest extends BaseTest {
 
     HomePage homePage;
     LoginPage loginPage;
+    private final Logger log = LoggerHelper.getLogger(HomePage.class);
 
     @Test(testName = "Validating Successful Login")
     public void testSuccessfulLogin() {
@@ -24,10 +26,11 @@ public class LoginPageTest extends BaseTest {
         loginPage.waitForPageToLoad();
         loginPage.login("tomsmith", "SuperSecretPassword!");
 
-        String prompt = "Validate that the login was successful and a success message is displayed with text 'You logged into a secure area!'";
-        AiResult aiResult = VisualReasonEngine.getInstance().validateUiImage(driver, prompt);
-        ExtentReportHelper.getInstance().GetExtentTest().info("Reasoning: " + aiResult.getReason());
-        Assert.assertTrue(aiResult.isResult(), "Login should be successful with valid credentials");
+        loginPage.waitForFlashMessageToBeVisible();
+        String flashMessage = loginPage.getFlashMessage();
+        log.info("Flash message: " + flashMessage);
+        ExtentReportHelper.getInstance().GetExtentTest().info("Flash message: " + flashMessage);
+        Assert.assertTrue(flashMessage.trim().contains("You logged into a secure area!"), "Validating the success message after login.");
     }
 
     @Test(testName = "Validating Failed Login with Invalid Credentials")

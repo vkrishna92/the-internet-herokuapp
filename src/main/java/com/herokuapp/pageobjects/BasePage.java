@@ -17,6 +17,10 @@ public class BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
+    protected void waitForElementToBeVisisble(By locator) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     protected void waitForElementToBeClickable(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
