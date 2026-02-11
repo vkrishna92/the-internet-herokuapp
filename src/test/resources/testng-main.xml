@@ -3,7 +3,8 @@
 <suite name="AutomationSuite-QA" verbose="1">
     <test name="uitest">
         <classes>
-            <class name="com.herokuapp.HerokuTests"/>
+            <class name="com.herokuapp.tests.HerokuTests"/>
+            <class name="com.herokuapp.tests.LoginPageTest"/>
         </classes>
     </test>
 </suite>

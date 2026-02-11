@@ -1,4 +1,4 @@
-package com.herokuapp;
+package com.herokuapp.tests;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -24,6 +24,7 @@ public class BaseTest {
 
     private final static String AWS_DEVICE_FARM = "aws-device-farm";
     protected WebDriver driver;
+    protected final String BASE_URL = "https://the-internet.herokuapp.com/";
     @BeforeSuite
     public void beforeSuite() {
         System.out.println("Before Suite");
@@ -52,7 +53,7 @@ public class BaseTest {
     @BeforeTest
     public void beforeTest() {
         System.out.println("Before Test");
-        initializeTestRun("","");
+        //initializeTestRun("","");
     }
 
     @AfterTest
@@ -72,10 +73,10 @@ public class BaseTest {
     }
 
     private void initiateDriver() {
-        ChromeOptions options = getChromeOptions(true);
+        ChromeOptions options = getChromeOptions(false);
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(BASE_URL);
         try {
             WebDriverManager.getInstance().setDriver(driver);
         } catch (Exception e) {
@@ -104,7 +105,7 @@ public class BaseTest {
         String sessionId = ((RemoteWebDriver) driver).getSessionId().toString();
         System.out.println("Session ID: " + sessionId);
         driver.manage().window().maximize();
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get(BASE_URL);
         try {
             WebDriverManager.getInstance().setDriver(driver);
         } catch (Exception e) {

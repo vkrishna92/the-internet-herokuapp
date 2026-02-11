@@ -121,3 +121,116 @@
 2026-01-12 18:26:37 INFO  LoggerHelper:20 - Verifying Dropdown page
 2026-01-12 18:26:44 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
 2026-01-12 18:26:52 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 20:20:52 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 20:20:53 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 20:21:05 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 20:21:15 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 20:42:16 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 20:42:17 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 20:42:24 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 20:42:34 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 20:43:15 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 20:43:16 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 20:43:26 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 20:43:34 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 20:52:08 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 20:52:08 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 20:52:16 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 20:52:24 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 21:52:04 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 21:52:04 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 21:52:12 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 21:52:22 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 21:58:19 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 21:58:20 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 21:58:27 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 21:58:36 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 22:01:09 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 22:01:10 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 22:01:17 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 22:01:25 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 22:04:03 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 22:04:03 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 22:04:10 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 22:04:19 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 22:06:02 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 22:06:02 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 22:06:10 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 22:06:20 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-13 22:08:55 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-13 22:08:55 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-13 22:09:03 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-13 22:09:11 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-14 21:46:19 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-14 21:46:19 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-14 21:46:27 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-14 21:46:32 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-14 21:47:54 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-14 21:47:54 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-14 21:50:57 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-14 21:50:57 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-14 21:51:04 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-14 21:51:09 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-14 21:52:45 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-14 21:52:45 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-14 21:52:51 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-14 21:52:57 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-14 21:55:01 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-14 21:55:01 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-14 21:55:08 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-14 21:55:16 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-16 18:46:04 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-16 18:46:05 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-16 18:46:12 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-16 18:46:21 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-01-16 18:47:15 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-01-16 18:47:15 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-01-16 18:47:23 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-01-16 18:47:31 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-07 14:42:33 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-02-07 14:42:33 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-02-07 14:42:39 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-02-07 14:42:47 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-07 14:42:54 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:42:58 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:42:58 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:44:49 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-02-07 14:44:49 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-02-07 14:44:55 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-02-07 14:45:03 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-07 14:45:10 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:45:13 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:45:44 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:47:39 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-02-07 14:47:39 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-02-07 14:47:46 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-02-07 14:47:54 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-07 14:48:01 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:48:05 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:48:35 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:51:47 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-02-07 14:51:48 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-02-07 14:51:54 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-02-07 14:52:01 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-07 14:52:09 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:52:12 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:52:43 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:53:47 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:54:08 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:54:39 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:56:20 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:56:27 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:56:57 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:57:34 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:57:50 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:58:03 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:58:55 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:59:02 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-07 14:59:05 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-10 21:08:12 INFO  LoggerHelper:19 - Clicking on menu item: Dropdown
+2026-02-10 21:08:12 INFO  LoggerHelper:20 - Verifying Dropdown page
+2026-02-10 21:08:20 INFO  LoggerHelper:19 - Clicking on menu item: Add/Remove Elements
+2026-02-10 21:08:29 INFO  LoggerHelper:19 - Clicking on menu item: Checkboxes
+2026-02-10 21:08:37 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-10 21:08:42 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
+2026-02-10 21:08:45 INFO  LoggerHelper:19 - Clicking on menu item: Form Authentication
