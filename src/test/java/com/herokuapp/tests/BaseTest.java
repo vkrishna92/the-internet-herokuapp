@@ -118,6 +118,14 @@ public class BaseTest {
         if (isHeadless) {
             options.addArguments("--headless=new");
         }
+
+        // Disable Chrome password manager to prevent "Change your password" popup
+        options.addArguments("--disable-save-password-bubble");
+        java.util.Map<String, Object> prefs = new java.util.HashMap<>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+        options.setExperimentalOption("prefs", prefs);
+
         return options;
     }
 

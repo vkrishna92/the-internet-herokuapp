@@ -9,6 +9,8 @@ public class LoginPage extends BasePage {
     private final By usernameFieldLocator = By.xpath("//input[@id='username']");
     private final By passwordFieldLocator = By.xpath("//input[@id='password']");
     private final By loginButtonLocator = By.xpath("//button[@type='submit']");
+    private final By flashBannerLocator = By.xpath("//div[@id='flash-messages']");
+    private final By flashMessageLocator = By.xpath("//div[@id='flash-messages']/div");
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -43,5 +45,14 @@ public class LoginPage extends BasePage {
         waitForElementToBePresent(usernameFieldLocator);
         waitForElementToBePresent(passwordFieldLocator);
         waitForElementToBePresent(loginButtonLocator);
+    }
+
+    public void waitForFlashMessageToBeVisible(){
+        waitForElementToBeVisisble(flashBannerLocator);
+    }
+
+    public String getFlashMessage() {
+        waitForElementToBePresent(flashMessageLocator);
+        return _driver.findElement(flashMessageLocator).getText();
     }
 }
