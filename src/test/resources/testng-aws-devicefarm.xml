@@ -4,8 +4,9 @@
     <parameter name="platform" value="aws-device-farm"/>
     <test name="uitest">
         <classes>
-            <class name="com.herokuapp.DropdownTest"/>
-            <class name="com.herokuapp.HerokuTests"/>
+            <class name="com.herokuapp.tests.DropdownTest"/>
+            <class name="com.herokuapp.tests.HerokuTests"/>
+            <class name="com.herokuapp.tests.LoginPageTest"/>
         </classes>
     </test>
 </suite>

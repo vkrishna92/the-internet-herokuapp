@@ -1,5 +1,7 @@
 package com.herokuapp.helpers;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public final class WebDriverManager {
@@ -24,5 +26,9 @@ public final class WebDriverManager {
 
     public WebDriver getDriver() {
         return driver;
+    }
+
+    public String getScreenShotBase64() {
+        return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
     }
 }

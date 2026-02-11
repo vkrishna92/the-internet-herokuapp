@@ -17,7 +17,16 @@ public class HomePage extends BasePage{
 
     public void clickOnMenuItem(String menuItem) {
         log.info("Clicking on menu item: " + menuItem);
-        driver.findElement(By.partialLinkText(menuItem)).click();
+        By menuItemLocator = By.partialLinkText(menuItem);
+        waitForElementToBeClickable(menuItemLocator);
+        driver.findElement(menuItemLocator).click();
+    }
+
+    @Override
+    public void waitForPageToLoad() {
+        // Wait for the page heading to be present
+        By headingLocator = By.tagName("h1");
+        waitForElementToBePresent(headingLocator);
     }
 
 }

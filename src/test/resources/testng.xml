@@ -1,15 +1,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="AutomationSuite-QA" verbose="1">
-<!--    <listeners>-->
-<!--        <listener class-name="com.herokuapp.listeners.FailureArtifactListeners"/>-->
-<!--    </listeners>-->
+    <listeners>
+        <listener class-name="com.herokuapp.listeners.FailureArtifactListeners"/>
+    </listeners>
     <parameter name="platform" value="local"/>
     <test name="uitest">
         <classes>
-            <class name="com.herokuapp.DropdownTest"/>
-            <class name="com.herokuapp.HerokuTests"/>
-            <class name="com.herokuapp.CheckBoxTests"/>
+            <class name="com.herokuapp.tests.DropdownTest"/>
+            <class name="com.herokuapp.tests.HerokuTests"/>
+            <class name="com.herokuapp.tests.CheckBoxTests"/>
+            <class name="com.herokuapp.tests.LoginPageTest"/>
         </classes>
     </test>
 </suite>
