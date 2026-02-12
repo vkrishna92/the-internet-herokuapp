@@ -11,5 +11,5 @@ jobs:
       - name: Check if PR targets correct branch
         if: github.base_ref == 'master' && github.head_ref != 'dev'
         run: |
-          echo "::error::PRs to main branch are only allowed from dev branch"
+          echo "::error::PRs to master branch are only allowed from dev branch"
           exit 1
