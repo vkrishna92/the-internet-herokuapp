@@ -3,13 +3,28 @@ name: PR Target Branch Check
 on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
+    branches:
+      - master
 
 jobs:
   check-target-branch:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if PR targets correct branch
-        if: github.base_ref == 'master' && github.head_ref != 'dev'
+      - name: Verify PR follows branch strategy
         run: |
-          echo "::error::PRs to master branch are only allowed from dev branch"
-          exit 1
+          echo "🔍 Checking PR branch strategy..."
+          echo "Base branch: ${{ github.base_ref }}"
+          echo "Head branch: ${{ github.head_ref }}"
+          
+          if [[ "${{ github.base_ref }}" == "master" && "${{ github.head_ref }}" != "dev" ]]; then
+            echo ""
+            echo "❌ ERROR: PRs to 'master' must come from 'dev' branch only!"
+            echo ""
+            echo "📋 Correct workflow:"
+            echo "   1. Create PR: feature-branch → dev"
+            echo "   2. After testing: dev → master"
+            echo ""
+            exit 1
+          fi
+          
+          echo "✅ Branch strategy is correct!"
