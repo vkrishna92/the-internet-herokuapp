@@ -13,7 +13,6 @@ public class HerokuTests extends BaseTest {
 
     HomePage homePage;
     AddRemoveElementsPage addRemoveElementsPage;
-    DropdownPage dropdownPage;
 
     @Test(testName = "Validating Button Clicks")
     public void addRemoveButtonTest(){
